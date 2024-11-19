@@ -1,0 +1,139 @@
+/* Home.css */
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #a8c089, #ffec7f); /* Matcha green to pastel sunflower yellow */
+  color: #333;
+}
+
+/* Home container */
+.home {
+  width: 100%;
+  min-height: 100vh; /* Ensure full-page height for scrolling */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align items */
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+/* Header section */
+.home__header {
+  text-align: center; /* Center the header text */
+  color: #fff; /* Ensure text is readable against the gradient */
+  margin-bottom: 30px;
+}
+
+.home__header h1 {
+  margin: 0;
+  font-size: 3.5em; /* Large font for impact */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+/* Image section */
+.home__content {
+  width: 80%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.home__image {
+  width: 90%; /* Adjust width as needed */
+  max-width: 800px; /* Prevent the image from being too large */
+  border-radius: 10px; /* Smooth edges */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  margin-top: 20px;
+}
+
+/* Video section */
+.home__video {
+  width: 90%;
+  max-width: 900px;
+  margin: 30px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
+  border-radius: 8px; /* Matches other elements */
+  overflow: hidden;
+}
+
+/* Live shows section */
+.home__shows {
+  margin-top: 40px;
+  padding: 20px;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.9); /* Subtle contrast background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds depth */
+}
+
+.home__shows h2 {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 2em; /* Slightly larger headline */
+  text-align: center;
+}
+
+.home__shows-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between each show */
+  padding: 0;
+  list-style: none;
+}
+
+/* Individual show card */
+.home__show-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* Space between text and button */
+  padding: 20px;
+  background-color: #e6f2d8; /* Soft green to complement the background */
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Show details */
+.home__show-details {
+  font-size: 1.2em;
+  color: #333;
+}
+
+/* Button bubble */
+.home__show-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  background-color: #ffec7f; /* Sunflower yellow to match gradient */
+  color: #333; /* High contrast text */
+  border: 2px solid #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.home__show-link:hover {
+  background-color: #ffd34d; /* Slightly darker sunflower tone */
+  transform: scale(1.05); /* Subtle scaling effect */
+}
+
+/* Button styles */
+.home__download-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home__download-btn:hover {
+  background-color: #2980b9;
+}
