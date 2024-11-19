@@ -1,5 +1,3 @@
-/* Home.css */
-
 /* Base styles */
 body {
   margin: 0;
@@ -15,7 +13,7 @@ body {
   min-height: 100vh; /* Ensure full-page height for scrolling */
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center-align items */
+  align-items: center;
   padding: 20px;
   box-sizing: border-box; /* Include padding in width calculations */
 }
@@ -23,17 +21,17 @@ body {
 /* Header section */
 .home__header {
   text-align: center; /* Center the header text */
-  color: #fff; /* Ensure text is readable against the gradient */
+  color: #fff;
   margin-bottom: 30px;
 }
 
 .home__header h1 {
   margin: 0;
-  font-size: 3.5em; /* Large font for impact */
+  font-size: 3.5em;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
 }
 
-/* Image section */
+/* Image and special links section */
 .home__content {
   width: 80%;
   margin: 20px 0;
@@ -43,9 +41,62 @@ body {
 .home__image {
   width: 90%; /* Adjust width as needed */
   max-width: 800px; /* Prevent the image from being too large */
-  border-radius: 10px; /* Smooth edges */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+  border-radius: 10px;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
   margin-top: 20px;
+}
+
+.home__special-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home__special-link {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  background-color: #ffec7f;
+  color: #333;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.home__special-link:hover {
+  background-color: #ffd34d;
+  transform: scale(1.05);
+}
+
+.home__special-link--hbo {
+  background-color: #001f3f; /* HBO navy blue */
+  color: #fff;
+}
+
+.home__special-link--hbo:hover {
+  background-color: #003366;
+}
+
+.home__special-link--apple {
+  background-color: #f8f8f8; /* Light grey for Apple */
+  color: #333;
+  border: 2px solid #ccc;
+}
+
+.home__special-link--apple:hover {
+  background-color: #e6e6e6;
+}
+
+.home__special-link--spotify {
+  background-color: #1db954; /* Spotify green */
+  color: #fff;
+}
+
+.home__special-link--spotify:hover {
+  background-color: #1aa34a;
 }
 
 /* Video section */
@@ -53,8 +104,8 @@ body {
   width: 90%;
   max-width: 900px;
   margin: 30px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds shadow for depth */
-  border-radius: 8px; /* Matches other elements */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -63,22 +114,22 @@ body {
   margin-top: 40px;
   padding: 20px;
   width: 80%;
-  background-color: rgba(255, 255, 255, 0.9); /* Subtle contrast background */
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Adds depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .home__shows h2 {
   margin-bottom: 15px;
   color: #333;
-  font-size: 2em; /* Slightly larger headline */
+  font-size: 2em;
   text-align: center;
 }
 
 .home__shows-list {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Space between each show */
+  gap: 20px;
   padding: 0;
   list-style: none;
 }
@@ -88,15 +139,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px; /* Space between text and button */
+  gap: 10px;
   padding: 20px;
-  background-color: #e6f2d8; /* Soft green to complement the background */
+  background-color: #e6f2d8;
   border-radius: 15px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-/* Show details */
 .home__show-details {
   font-size: 1.2em;
   color: #333;
@@ -107,8 +157,8 @@ body {
   display: inline-block;
   padding: 10px 20px;
   font-size: 1.1em;
-  background-color: #ffec7f; /* Sunflower yellow to match gradient */
-  color: #333; /* High contrast text */
+  background-color: #ffec7f;
+  color: #333;
   border: 2px solid #fff;
   border-radius: 20px;
   text-decoration: none;
@@ -117,23 +167,130 @@ body {
 }
 
 .home__show-link:hover {
-  background-color: #ffd34d; /* Slightly darker sunflower tone */
-  transform: scale(1.05); /* Subtle scaling effect */
+  background-color: #ffd34d;
+  transform: scale(1.05);
 }
 
-/* Button styles */
-.home__download-btn {
+/* Pen Pals Podcast section */
+.home__podcast {
+  margin-top: 40px;
+  padding: 20px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.home__podcast-title {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.home__podcast-logo {
+  width: 150px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.home__podcast-platforms {
   margin-top: 20px;
-  padding: 12px 24px;
-  font-size: 1.1em;
-  background-color: #3498db;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home__podcast-platform {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.home__podcast-platform img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.home__podcast-platform:hover {
+  transform: scale(1.1);
+  background-color: #ffd34d;
+}
+
+/* Contact and Socials */
+.home__contact {
+  margin-top: 40px;
+  width: 80%;
+  text-align: center;
+}
+
+.home__contact h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.home__socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home__social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.home__social-icon img {
+  width: 70%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.home__social-icon:hover {
+  transform: scale(1.1);
+  background-color: #ffd34d;
+}
+
+/* Bubble Style */
+.home__bubble {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.home__button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
   color: #fff;
-  border: none;
+  background-color: #2a9d8f;
+  text-decoration: none;
+  text-align: center;
   border-radius: 5px;
-  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
-.home__download-btn:hover {
-  background-color: #2980b9;
+.home__button:hover {
+  background-color: #1d6f61;
 }
