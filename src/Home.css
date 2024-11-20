@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #a8c089, #ffec7f); /* Matcha green to pastel sunflower yellow */
+  background: linear-gradient(135deg, #ffe5ae, #ffec7f); /* Matcha green to pastel sunflower yellow */
   color: #333;
 }
 
@@ -293,4 +293,10 @@ body {
 
 .home__button:hover {
   background-color: #1d6f61;
+}
+
+
+.home__social-icon {
+  width: 40px; /* Adjust as needed */
+  margin: 0 10px;
 }

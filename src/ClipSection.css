@@ -1,0 +1,46 @@
+.clip-section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  }
+  
+  .clip-section__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .clip-section__item {
+    padding: 10px 15px;
+    background-color: #ffe5ae;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    text-align: left;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .clip-section__item--active {
+    background-color: #ffd34d;
+    transform: scale(1.05);
+  }
+  
+  .clip-section__item:hover {
+    background-color: #ffd34d;
+  }
+  
+  .clip-section__video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    overflow: hidden;
+  }
+  
