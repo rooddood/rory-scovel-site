@@ -228,7 +228,7 @@ const Home = () => {
 
         <br /><br />
         <div className="home__socials">
-          <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/thepenpalspod" target="_blank" rel="noopener noreferrer">
             <img
               src={`${process.env.PUBLIC_URL}/images/icons/x-logo.jpg`}
               alt="Twitter"
@@ -242,21 +242,21 @@ const Home = () => {
               className="home__social-icon"
             />
           </a>
-          <a href="https://www.youtube.com/channel/yourchannel" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.youtube.com/c/OfficialRoryScovel" target="_blank" rel="noopener noreferrer">
             <img
               src={`${process.env.PUBLIC_URL}/images/icons/youtube-logo-black.png`}
               alt="YouTube"
               className="home__social-icon"
             />
           </a>
-          <a href="https://www.imdb.com/name/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.imdb.com/name/nm2665168/" target="_blank" rel="noopener noreferrer">
             <img
               src={`${process.env.PUBLIC_URL}/images/icons/imdb-logo-black.jpg`}
               alt="IMDb"
               className="home__social-icon"
             />
           </a>
-          <a href="https://open.spotify.com/user/yourprofile" target="_blank" rel="noopener noreferrer">
+          <a href="https://open.spotify.com/artist/1PflWU7nPUElTWqYUBkK6W" target="_blank" rel="noopener noreferrer">
             <img
               src={`${process.env.PUBLIC_URL}/images/icons/spotify-small-icon-black.png`}
               alt="Spotify"
