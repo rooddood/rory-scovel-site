@@ -17,7 +17,7 @@ const LiveShows = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                Get Tickets
+                Get LiveShows
                 </a>
             </li>
             </ul>

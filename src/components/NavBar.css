@@ -1,0 +1,32 @@
+.navbar {
+  background-color: #f5e6d6; /* Light peach/tan color */
+  padding: 15px 0; /* Add vertical padding for spacing */
+  text-align: center; /* Center-align the navbar content */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  position: sticky; /* Make the navbar stick to the top of the viewport */
+  top: 0; /* Set the top offset */
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+.navbar__list {
+  list-style-type: none;
+  margin: 0 auto; /* Center the list */
+  padding: 0;
+  display: inline-flex; /* Use inline-flex for horizontal centering */
+  gap: 20px; /* Add spacing between items */
+}
+
+.navbar__link {
+  text-decoration: none;
+  color: #6a5d4d; /* Subtle dark tan/brown color for contrast */
+  font-size: 1rem; /* Slightly smaller text size */
+  font-family: 'Arial', sans-serif; /* Clean font choice */
+  padding: 5px 10px; /* Add padding for clickable area */
+  transition: color 0.3s ease, background-color 0.3s ease;
+  border-radius: 5px; /* Rounded edges for hover effect */
+}
+
+.navbar__link:hover {
+  color: #fff; /* Change text color on hover */
+  background-color: #d4a373; /* Soft accent color for hover */
+}
